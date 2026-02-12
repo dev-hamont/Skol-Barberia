@@ -1,4 +1,27 @@
+.title {
+  font-size: calc(var(--font-size-md) * 1.5);
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: calc(var(--font-size-md) * 1.5);
+  color: var(--text-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
+  
+  .title {
+    font-size: calc(var(--font-size-lg) * 1.2);
+  }
 
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
 }

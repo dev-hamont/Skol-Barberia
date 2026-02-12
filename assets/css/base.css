@@ -5,3 +5,78 @@
   box-sizing: border-box;
 }
 
+/* GLOBAL VARIABLES */
+:root {
+  /* BRAND COLORS */
+  --primary-color: #c2a74f;
+  --secondary-color: #212121;
+
+  /* COMPLEMENTARY TONES */
+  --accent-color: #F5F7FA;
+  --background-color: #FAF9F7;
+  --surface-color: #FFFFFF;
+
+  /* TYPOGRAPHY */
+  --text-color: #2E2E2E;
+  --text-muted: #6C757D;
+
+  /* INTERACTIONS */
+  --border-color: #D8D3CC;
+  --hover-color: #093C8E;
+
+  /* TYPOGRAPHY SETTINGS */
+  --font-family-base: "Nunito", sans-serif;
+  --font-size-sm: 0.5rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 4rem;
+
+  /* SPACING & DIMENSIONS */
+  --container-width: 1200px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  /* VISUAL DETAILS */
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease-in-out;
+
+  /* LAYERING */
+  --z-nav: 1000;
+}
+
+/* BASIC STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+/* LINKS */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* MEDIA & CONTAINERS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
