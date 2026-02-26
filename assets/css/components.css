@@ -4,11 +4,11 @@
 
 /* Navbar Container */
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #1d1f1d, #464745);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-sm);
 }
 
 /*--- Logo Block ---*/
@@ -16,6 +16,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: var(--spacing-md);
 }
 
 .logo-navbar {
@@ -37,7 +38,6 @@ nav {
   width: 100%;
   background-color: var(--surface-color);
   transition: top 0.3s ease-in-out;
-  box-shadow: var(--box-shadow);
   z-index: var(--z-nav);
 }
 
@@ -111,6 +111,45 @@ nav {
 }
 .hamburger.active .hamburger__line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
+}
+
+
+/* ======================== 
+   ======== BUTTONS ======= 
+   ========================*/
+
+.btn__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 2.2rem;
+
+  background: transparent;
+  color: var(--accent-color);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+
+  transition: var(--transition);
+}
+
+.btn__cta:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 20px rgba(198, 169, 93, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn__cta i {
+  font-size: var(--font-size-md);
 }
 
 

@@ -10,6 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
@@ -26,7 +38,7 @@
           <a href="./">
             <img
               class="logo-navbar"
-              src="./assets/img/skol-titulo.webp"
+              src="./assets/img/SKOL1.png"
               alt="Skol Barbería"
             />
           </a>
@@ -56,6 +68,43 @@
       </nav>
     </header>
     <main>
+      <!-- HERO SOLO VIDEO -->
+      <section class="hero">
+        <video
+          class="hero__video"
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="./assets/video-barberia.png"
+        >
+          <source src="./assets/video-barberia.webm" type="video/webm" />
+        </video>
+
+        <div class="hero__overlay"></div>
+
+        <img
+          src="./assets/img/LOGO-SKOL.png"
+          alt="Logo Skol Barberia"
+          class="hero__logo animate__animated animate__pulse animate__infinite"
+        />
+      </section>
+
+      <!-- BLOQUE CONTENIDO -->
+      <section class="hero-info">
+        <div class="hero-info__text">
+          <span class="hero-info__title">
+            Don't waste your time looking back
+          </span>
+
+          <span class="hero-info__subtitle"> #SabemosLoQueHacemos </span>
+        </div>
+
+        <a href="https://www.whatsapp.com/?lang=es" class="btn__cta">
+          PEDIR TURNO
+          <span><i class="fab fa-whatsapp"></i></span>
+        </a>
+      </section>
       <section class="barberia"></section>
       <section class="colecciones"></section>
       <section class="sucursales"></section>
