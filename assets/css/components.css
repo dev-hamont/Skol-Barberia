@@ -152,6 +152,46 @@ nav {
   font-size: var(--font-size-md);
 }
 
+/* ===========================
+   CARRUSEL
+   =========================== */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel__track img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: var(--surface-color);
+  font-size: var(--font-size-md);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+
+.carousel__btn.prev {
+  left: 10px;
+}
+
+.carousel__btn.next {
+  right: 10px;
+}
 
 /* RESPONSIVE */
 @media (min-width: 768px) {

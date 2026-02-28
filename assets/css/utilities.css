@@ -1,12 +1,13 @@
 .title {
-  font-size: calc(var(--font-size-md) * 1.5);
-  font-weight: bold;
-  margin: 0 auto;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  font-weight: 500;
 }
 
 .subtitle {
-  font-size: calc(var(--font-size-md) * 1.5);
-  color: var(--text-color);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
 }
 
 .text-center {
@@ -16,12 +17,12 @@
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
-  
+
   .title {
-    font-size: calc(var(--font-size-lg) * 1.2);
+    font-size: var(--font-size-md)
   }
 
   .subtitle {
-    font-size: var(--font-size-lg);
+    font-size: 1.5rem
   }
 }

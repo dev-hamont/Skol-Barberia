@@ -64,6 +64,42 @@
   letter-spacing: 1px;
 }
 
+/* ===========================
+   SECTION - BARBERÍA
+   =========================== */
+
+.barberia {
+  background: radial-gradient(circle at center, #1c1c1c 0%, #111 70%);
+  padding: 4rem 1.5rem;
+}
+
+.barberia__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.barberia__title {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.barberia__title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: var(--primary-color);
+  margin-top: 0.8rem;
+}
+
+.barberia__text {
+  color: var(--accent-color);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
 
@@ -101,4 +137,20 @@
     font-size: 1.5rem
   }
 
+/* ===========================
+   SECTION - BARBERÍA
+   =========================== */
+  .barberia__container {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .barberia__info {
+    flex: 1;
+  }
+
+  .barberia__carousel {
+    flex: 1;
+  }
 }

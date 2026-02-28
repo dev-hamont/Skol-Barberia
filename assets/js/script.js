@@ -24,4 +24,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // === CAROUSEL =======================================================
+  const track = document.querySelector(".carousel__track");
+  const slides = document.querySelectorAll(".carousel__track img");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+
+  if (track && slides.length > 0) {
+    let index = 0;
+
+    const updateCarousel = () => {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    nextBtn?.addEventListener("click", () => {
+      index = (index + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevBtn?.addEventListener("click", () => {
+      index = (index - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+  }
 });
