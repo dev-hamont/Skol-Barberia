@@ -193,6 +193,27 @@ nav {
   right: 10px;
 }
 
+/* ===========================
+   FORM
+   =========================== */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form__group label {
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
   nav {

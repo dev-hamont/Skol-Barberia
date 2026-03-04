@@ -141,7 +141,117 @@
       <section class="colecciones"></section>
       <section class="sucursales"></section>
       <section class="novedades"></section>
-      <section class="contacto"></section>
+      <section class="contacto">
+        <div class="contacto__container">
+          <!-- BLOQUE INFORMACIÓN -->
+          <div class="contacto__info">
+            <div class="title contacto__title">CONTÁCTANOS</div>
+
+            <p class="contacto__text text-font">
+              Podés hacerlo a través de cualquiera de los medios que detallamos
+              más abajo o utilizando el formulario de contacto.
+            </p>
+
+            <ul class="contacto__datos text-font">
+              <!-- Email -->
+              <li class="contacto__item">
+                <span class="contacto__label">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  Email:
+                </span>
+                <a href="mailto:skolbarberia@gmail.com">
+                  skolbarberia@gmail.com
+                </a>
+              </li>
+
+              <!-- Teléfonos -->
+              <li class="contacto__item">
+                <span class="contacto__label">
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  Teléfonos:
+                </span>
+
+                <div class="contacto__sucursales">
+                  <address class="contacto__direccion">
+                    <strong>Sucursal Arenales</strong>
+                    <a href="tel:+541124665793">+54 (11) 2466 - 5793</a>
+                  </address>
+
+                  <address class="contacto__direccion">
+                    <strong>Sucursal Anchorena</strong>
+                    <a href="tel:+541156588748">+54 (11) 5658 - 8748</a>
+                  </address>
+                </div>
+              </li>
+
+              <!-- Direcciones -->
+              <li class="contacto__item">
+                <span class="contacto__label">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  Direcciones:
+                </span>
+
+                <div class="contacto__sucursales">
+                  <address class="contacto__direccion">
+                    <strong>Sucursal Arenales</strong>
+                    <a href="https://maps.app.goo.gl/eb4o8zzqP4joYEn38">Arenales 2807 CABA, Argentina</a>
+                  </address>
+
+                  <address class="contacto__direccion">
+                    <strong>Sucursal Anchorena</strong>
+                    <a href="https://maps.app.goo.gl/ZUH98K6hewmmGXz48">Anchorena 1713 CABA, Argentina</a>
+                  </address>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Redes Sociales -->
+            <div class="contacto__social text-font">
+              <!-- Tiktok-->
+              <a href="#" class="contacto__social-link" aria-label="TikTok">
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="contacto__social-link" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- BLOQUE FORMULARIO -->
+          <div class="contacto__formulario text-font">
+
+            <form action="#" method="post" class="form">
+              <div class="form__group">
+                <label for="nombre">Tu nombre</label>
+                <input type="text" id="nombre" name="nombre" required />
+              </div>
+
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" />
+              </div>
+
+              <div class="form__group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form__group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn__cta">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="./assets/js/script.js"></script>
