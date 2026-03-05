@@ -14,10 +14,12 @@
   text-align: center;
 }
 
+.container {
+  padding: 4rem 1.5rem;
+}
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
-
   .title {
     font-size: var(--font-size-md)
   }
@@ -28,5 +30,9 @@
 
   .text-font {
     font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 4rem 8rem;
   }
 }

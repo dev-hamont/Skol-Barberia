@@ -70,7 +70,6 @@
 
 .barberia {
   background: radial-gradient(circle at center, #1c1c1c 0%, #111 70%);
-  padding: 4rem 1.5rem;
 }
 
 .barberia__container {
@@ -105,7 +104,6 @@
    =========================== */
 
 .contacto {
-  padding: 4rem 1.5rem;
   background: linear-gradient(
     135deg,
     #0f0f0f 0%,
@@ -231,6 +229,50 @@
   outline: none;
 }
 
+/* ===========================
+   SECTION - FOOTER
+   =========================== */
+
+.footer {
+  background: var(--secondary-color);
+  padding: 2rem 1rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  max-width: 18rem;
+  height: auto;
+}
+
+.footer__left p {
+  font-size: 1rem;
+  color: var(--accent-color);
+  padding-left: 0.8rem;
+}
+
+.footer__dev-logo {
+  height: 25px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer__dev-logo:hover {
+  opacity: 1;
+}
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
 
@@ -302,5 +344,19 @@
   .contacto__formulario {
     flex: 1;
     padding-left: 3rem;
+  }
+
+  /* ===========================
+   SECTION - FOOTER
+   =========================== */  
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 8rem;
+  }
+
+  .footer__left {
+    flex-direction: row;
   }
 }

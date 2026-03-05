@@ -105,18 +105,18 @@
           <span><i class="fab fa-whatsapp"></i></span>
         </a>
       </section>
-      <section class="barberia">
+      <section class="barberia container">
         <div class="barberia__container">
           <!-- TEXT BLOCK -->
           <div class="barberia__info">
             <div class="title barberia__title">SKOL BARBERÍA</div>
-            <p class="barberia__text">
+            <p class="barberia__text text-font">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequatur sit numquam aliquid perspiciatis ex modi! Modi
               voluptatibus maiores explicabo, rem similique magni rerum unde
               architecto harum, aspernatur eos quam ipsum.
             </p>
-            <p class="barberia__text">
+            <p class="barberia__text text-font">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
               aperiam eos facere est pariatur assumenda sed doloremque, animi
               voluptatum officia aliquam odio optio hic dolore, ipsum expedita
@@ -127,9 +127,9 @@
           <div class="barberia__carousel">
             <div class="carousel">
               <div class="carousel__track">
-                <img src="img/barberia1.jpg" alt="Interior barbería" />
-                <img src="img/barberia2.jpg" alt="Sillones barbería" />
-                <img src="img/barberia3.jpg" alt="Espacio barbería" />
+                <img src="./assets/img/barberia1.png" alt="Interior barbería" />
+                <img src="./assets/img/barberia2.png" alt="Sillones barbería" />
+                <img src="./assets/img/barberia3.png" alt="Espacio barbería" />
               </div>
               <!-- CAROUSEL BUTTONS-->
               <button class="carousel__btn prev">‹</button>
@@ -141,7 +141,7 @@
       <section class="colecciones"></section>
       <section class="sucursales"></section>
       <section class="novedades"></section>
-      <section class="contacto">
+      <section class="contacto container">
         <div class="contacto__container">
           <!-- BLOQUE INFORMACIÓN -->
           <div class="contacto__info">
@@ -194,12 +194,16 @@
                 <div class="contacto__sucursales">
                   <address class="contacto__direccion">
                     <strong>Sucursal Arenales</strong>
-                    <a href="https://maps.app.goo.gl/eb4o8zzqP4joYEn38">Arenales 2807 CABA, Argentina</a>
+                    <a href="https://maps.app.goo.gl/eb4o8zzqP4joYEn38"
+                      >Arenales 2807 CABA, Argentina</a
+                    >
                   </address>
 
                   <address class="contacto__direccion">
                     <strong>Sucursal Anchorena</strong>
-                    <a href="https://maps.app.goo.gl/ZUH98K6hewmmGXz48">Anchorena 1713 CABA, Argentina</a>
+                    <a href="https://maps.app.goo.gl/ZUH98K6hewmmGXz48"
+                      >Anchorena 1713 CABA, Argentina</a
+                    >
                   </address>
                 </div>
               </li>
@@ -220,7 +224,6 @@
 
           <!-- BLOQUE FORMULARIO -->
           <div class="contacto__formulario text-font">
-
             <form action="#" method="post" class="form">
               <div class="form__group">
                 <label for="nombre">Tu nombre</label>
@@ -253,7 +256,31 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__left">
+          <img
+            src="assets/img/SKOL1.png"
+            alt="SKOL Logo"
+            class="footer__logo"
+          />
+          <p>© 2026 SKOL. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer__center">
+        </div>
+
+        <div class="footer__right">
+          <a href="https://tusitio.com" target="_blank">
+            <img
+              src="assets/logo-dev.svg"
+              alt="Logo Desarrollador"
+              class="footer__dev-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
