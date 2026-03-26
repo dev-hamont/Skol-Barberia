@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   // === NAVBAR =========================================================
   const hamburger = document.querySelector(".hamburger");
   const navList = document.querySelector(".nav__list");
@@ -48,4 +49,51 @@ document.addEventListener("DOMContentLoaded", () => {
       updateCarousel();
     });
   }
+
+  // === TEAM SLIDER ====================================================
+  const teamTrack = document.querySelector(".team-track");
+  const teamNext = document.querySelector(".team-btn--next");
+  const teamPrev = document.querySelector(".team-btn--prev");
+
+  if (teamTrack) {
+
+    const getCardWidth = () => {
+      const card = teamTrack.querySelector(".team-card");
+      return card ? card.offsetWidth + 15 : 0; // gap = 15px
+    };
+
+    const scrollAmount = () => {
+      const isDesktop = window.innerWidth >= 1024;
+      return getCardWidth() * (isDesktop ? 5 : 1);
+    };
+
+    teamNext?.addEventListener("click", () => {
+      teamTrack.scrollBy({
+        left: scrollAmount(),
+        behavior: "smooth",
+      });
+    });
+
+    teamPrev?.addEventListener("click", () => {
+      teamTrack.scrollBy({
+        left: -scrollAmount(),
+        behavior: "smooth",
+      });
+    });
+
+    // Opcional: ocultar botones en mobile
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        if (teamNext) teamNext.style.display = "none";
+        if (teamPrev) teamPrev.style.display = "none";
+      } else {
+        if (teamNext) teamNext.style.display = "block";
+        if (teamPrev) teamPrev.style.display = "block";
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }
+
 });
