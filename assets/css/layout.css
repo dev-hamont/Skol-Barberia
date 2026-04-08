@@ -64,6 +64,12 @@
   letter-spacing: 1px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
 
@@ -101,4 +107,7 @@
     font-size: 1.5rem
   }
 
+  .hero-buttons {
+    flex-direction: row;
+  }
 }
