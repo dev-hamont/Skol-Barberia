@@ -196,13 +196,6 @@
   margin-bottom: 15px;
 }
 
-/* PRECIO */
-.price {
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 /* BUTTON */
 .product__info button {
   margin-top: auto;
