@@ -213,6 +213,111 @@
   background: #b8962e;
 }
 
+/* ===========================
+   SECTION - RESEÑAS
+   =========================== */
+
+.reviews {
+  background-color: var(--surface-color);
+}
+
+.reviews__grid {
+  display: flex;
+  gap: var(--spacing-sm);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.review__card {
+  min-width: 85%;
+  background: var(--surface-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.review__card--top {
+  padding: 1rem;
+}
+
+.review__card--icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.review__card--top p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.review__card--bottom {
+  background: #e0e0e0;
+  padding: 12px 16px;
+}
+
+.review__card--stars {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.review__card--user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review__card--avatar {
+  width: 35px;
+  height: 35px;
+  background: var(--primary-color);
+  color: var(--surface-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review__card--user span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.reviews__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reviews__menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.reviews__menu.active {
+  display: block;
+}
+
+.reviews__menu a {
+  display: block;
+  padding: 30px 45px;
+  color: #333;
+  text-decoration: none;
+}
+
+.reviews__menu a:hover {
+  background: var(--primary-color);
+}
+
 
 /* ===========================
    SECTION - CONTACTO
@@ -481,6 +586,25 @@
 
   .team-btn--next {
     right: -20px;
+  }
+
+/* ===========================
+   SECTION - RESEÑAS
+   =========================== */
+  .reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: visible;
+  }
+
+  .review__card {
+    min-width: auto;
+  }
+
+  .reviews__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 /* ===========================

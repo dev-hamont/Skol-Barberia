@@ -96,4 +96,22 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", handleResize);
   }
 
+  // === REVIEWS DROPDOWN ============================================
+  const reviewsBtn = document.querySelector(".btn__menu");
+  const reviewsMenu = document.getElementById("reviewsMenu");
+
+  if (reviewsBtn && reviewsMenu) {
+
+    reviewsBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      reviewsMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!reviewsMenu.contains(e.target) && !reviewsBtn.contains(e.target)) {
+        reviewsMenu.classList.remove("active");
+      }
+    });
+
+  }
 });

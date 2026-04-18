@@ -152,6 +152,40 @@ nav {
   font-size: var(--font-size-md);
 }
 
+/* ------------------- */
+
+.btn__menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 2.2rem;
+
+  background: var(--background-color);
+  color: var(--secondary-color);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 1.5px solid var(--primary-color);
+  border-radius: 50px;
+
+  transition: var(--transition);
+}
+
+.btn__menu:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 20px rgba(198, 169, 93, 0.35);
+  transform: translateY(-2px);
+}
+
+
+
 /* ===========================
    CARRUSEL
    =========================== */
@@ -325,4 +359,17 @@ nav {
   .card {
     width: 400px;
   }
+
+/* ======================== 
+   ======== BUTTONS ======= 
+   ========================*/
+
+  .btn__menu {
+    width: 200px;
+    height: 80px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+  }
+
 }
