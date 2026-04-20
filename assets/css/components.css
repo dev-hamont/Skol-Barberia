@@ -220,6 +220,40 @@ nav {
   border-color: var(--primary-color);
 }
 
+.card__content {
+  position: absolute;
+  inset: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2;
+  text-align: center;
+}
+
+.card--arenales {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../img/suc-arenales.svg") center/cover no-repeat;
+    height: 220px;
+}
+
+.card--anchorena {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../img/suc-anchorena.svg") center/cover no-repeat;
+    height: 220px;
+}
+
+.card__character {
+  position: absolute;
+  bottom: -20px;
+  right: -20px; /* lo sacás un poco para que “rompa” la card */
+  height: 100%;
+  pointer-events: none; /* opcional */
+}
+
 /* ICONO */
 .icon {
   width: 60px;
@@ -319,10 +353,9 @@ nav {
 
   .cards__container {
     flex-direction: row;
-    
   }
 
   .card {
-    width: 400px;
+    width: 350px;
   }
 }
