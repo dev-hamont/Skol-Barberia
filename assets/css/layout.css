@@ -97,7 +97,6 @@
   position: relative;
 }
 
-/* TRACK */
 .team-track {
   display: flex;
   gap: 5px;
@@ -110,7 +109,6 @@
   display: none;
 }
 
-/* CARD */
 .team-card {
   min-width: 70%;
   scroll-snap-align: start;
@@ -125,22 +123,37 @@
   object-fit: cover;
 }
 
-/* NOMBRE */
-.team-name {
+.team-info {
   position: absolute;
   bottom: 10px;
   left: 10px;
   right: 10px;
-  background: #2d6b63;
+
+  background: var(--primary-color);
   color: #fff;
-  text-align: center;
-  padding: 8px;
   border-radius: 8px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
-/* BOTONES */
-.team-btn {
-  display: none;
+.team-name {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.team-cta {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /* ===========================
@@ -555,7 +568,6 @@
    SECTION - TEAM
    =========================== */
 
-
   .team-track {
     overflow: hidden;
   }
@@ -564,14 +576,13 @@
     min-width: calc(95% / 5);
   }
 
-  /* BOTONES */
   .team-btn {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #2d6b63;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     width: 40px;
     height: 40px;
@@ -586,6 +597,33 @@
 
   .team-btn--next {
     right: -20px;
+  }
+
+  .team-cta {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+
+  .team-name {
+    transition: transform 0.3s ease;
+  }
+
+  .team-info {
+    transition: transform 0.3s ease;
+  }
+
+  .team-card:hover .team-info {
+    transform: translateY(-10px);
+  }
+
+  .team-card:hover .team-name {
+    transform: translateY(-5px);
+  }
+
+  .team-card:hover .team-cta {
+    opacity: 1;
+    transform: translateY(0);
   }
 
 /* ===========================

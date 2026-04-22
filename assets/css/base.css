@@ -64,10 +64,6 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
-  color: var(--hover-color);
-}
-
 /* MEDIA & CONTAINERS */
 img {
   max-width: 100%;
