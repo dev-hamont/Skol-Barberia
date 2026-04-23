@@ -96,4 +96,27 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", handleResize);
   }
 
+  // === STORE (PRODUCT CARDS INTERACTION) ==============================
+  const productCards = document.querySelectorAll(".product__card");
+
+  if (productCards.length > 0) {
+
+    productCards.forEach(card => {
+      card.addEventListener("click", (e) => {
+
+        // evitar que el botón dispare el toggle
+        if (e.target.tagName === "BUTTON") return;
+
+        // cerrar otras cards
+        productCards.forEach(c => {
+          if (c !== card) c.classList.remove("active");
+        });
+
+        // toggle actual
+        card.classList.toggle("active");
+      });
+    });
+
+  }
+
 });
