@@ -214,6 +214,31 @@
 }
 
 /* ===========================
+   SECTION - GALERIA
+   =========================== */
+.gallery {
+  background-color: var(--primary-color);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* ===========================
    SECTION - RESEÑAS
    =========================== */
 
@@ -628,6 +653,18 @@
 
   .team-btn--next {
     right: -20px;
+  }
+
+/* ===========================
+   SECTION - GALERIA
+   =========================== */
+
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery__item:hover img {
+    transform: scale(1.1);
   }
 
 /* ===========================
